@@ -1,0 +1,334 @@
+{
+  "namespace": "__cypress",
+  "version": "6.3.0",
+  "projectRoot": "/cypress/packages/runner-ct",
+  "projectName": "runner-ct",
+  "report": false,
+  "browsers": [
+    {
+      "name": "chrome",
+      "family": "chromium",
+      "channel": "stable",
+      "displayName": "Chrome",
+      "version": "88.0.4324.96",
+      "path": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      "majorVersion": 88
+    }
+  ],
+  "experimentalComponentTesting": true,
+  "animationDistanceThreshold": 5,
+  "autoOpen": false,
+  "baseUrl": "http://localhost:62505",
+  "blockHosts": null,
+  "chromeWebSecurity": true,
+  "clientRoute": "/__/",
+  "componentFolder": "/cypress/packages/runner-ct/cypress/component",
+  "defaultCommandTimeout": 4000,
+  "downloadsFolder": "/cypress/packages/runner-ct/cypress/downloads",
+  "execTimeout": 60000,
+  "experimentalFetchPolyfill": false,
+  "experimentalRunEvents": false,
+  "experimentalSourceRewriting": false,
+  "experimentalStudio": false,
+  "fileServerFolder": "/cypress/packages/runner-ct",
+  "firefoxGcInterval": {
+    "runMode": 1,
+    "openMode": null
+  },
+  "fixturesFolder": "/cypress/packages/runner-ct/cypress/fixtures",
+  "hosts": null,
+  "ignoreTestFiles": "*.hot-update.js",
+  "includeShadowDom": false,
+  "integrationFolder": "/cypress/packages/runner-ct/cypress/integration",
+  "isTextTerminal": false,
+  "javascripts": [],
+  "morgan": true,
+  "modifyObstructiveCode": true,
+  "nodeVersion": "default",
+  "numTestsKeptInMemory": 50,
+  "pageLoadTimeout": 60000,
+  "pluginsFile": "/cypress/packages/runner-ct/cypress/plugins/index.js",
+  "port": 62506,
+  "projectId": null,
+  "reporter": "spec",
+  "reporterOptions": null,
+  "reporterRoute": "/__cypress/reporter",
+  "requestTimeout": 5000,
+  "responseTimeout": 30000,
+  "retries": {
+    "runMode": 0,
+    "openMode": 0
+  },
+  "screenshotOnRunFailure": true,
+  "screenshotsFolder": "/cypress/packages/runner-ct/cypress/screenshots",
+  "socketId": null,
+  "socketIoRoute": "/__socket.io",
+  "webpackDevServerPublicPathRoute": "/__cypress/src",
+  "socketIoCookie": "__socket.io",
+  "supportFile": "/cypress/packages/runner-ct/cypress/support/index.js",
+  "taskTimeout": 60000,
+  "testFiles": "**/*.*",
+  "trashAssetsBeforeRuns": true,
+  "userAgent": null,
+  "video": true,
+  "videoCompression": 32,
+  "videosFolder": "/cypress/packages/runner-ct/cypress/videos",
+  "videoUploadOnPasses": true,
+  "viewportHeight": 500,
+  "viewportWidth": 500,
+  "waitForAnimations": true,
+  "scrollBehavior": "top",
+  "watchForFileChanges": true,
+  "xhrRoute": "/xhrs/",
+  "env": {},
+  "cypressEnv": "development",
+  "resolved": {
+    "animationDistanceThreshold": {
+      "value": 5,
+      "from": "default"
+    },
+    "baseUrl": {
+      "value": null,
+      "from": "default"
+    },
+    "blockHosts": {
+      "value": null,
+      "from": "default"
+    },
+    "browsers": {
+      "value": [
+        {
+          "name": "chrome",
+          "family": "chromium",
+          "channel": "stable",
+          "displayName": "Chrome",
+          "version": "88.0.4324.96",
+          "path": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+          "majorVersion": 88
+        }
+      ],
+      "from": "default"
+    },
+    "chromeWebSecurity": {
+      "value": true,
+      "from": "default"
+    },
+    "componentFolder": {
+      "value": "cypress/component",
+      "from": "default"
+    },
+    "defaultCommandTimeout": {
+      "value": 4000,
+      "from": "default"
+    },
+    "downloadsFolder": {
+      "value": "cypress/downloads",
+      "from": "default"
+    },
+    "env": {},
+    "execTimeout": {
+      "value": 60000,
+      "from": "default"
+    },
+    "experimentalComponentTesting": {
+      "value": true,
+      "from": "cli"
+    },
+    "experimentalFetchPolyfill": {
+      "value": false,
+      "from": "default"
+    },
+    "experimentalRunEvents": {
+      "value": false,
+      "from": "default"
+    },
+    "experimentalSourceRewriting": {
+      "value": false,
+      "from": "default"
+    },
+    "experimentalStudio": {
+      "value": false,
+      "from": "default"
+    },
+    "fileServerFolder": {
+      "value": "",
+      "from": "default"
+    },
+    "firefoxGcInterval": {
+      "value": {
+        "runMode": 1,
+        "openMode": null
+      },
+      "from": "default"
+    },
+    "fixturesFolder": {
+      "value": "cypress/fixtures",
+      "from": "default"
+    },
+    "hosts": {
+      "value": null,
+      "from": "default"
+    },
+    "ignoreTestFiles": {
+      "value": "*.hot-update.js",
+      "from": "default"
+    },
+    "includeShadowDom": {
+      "value": false,
+      "from": "default"
+    },
+    "integrationFolder": {
+      "value": "cypress/integration",
+      "from": "default"
+    },
+    "modifyObstructiveCode": {
+      "value": true,
+      "from": "default"
+    },
+    "nodeVersion": {
+      "value": "default",
+      "from": "default"
+    },
+    "numTestsKeptInMemory": {
+      "value": 50,
+      "from": "default"
+    },
+    "pageLoadTimeout": {
+      "value": 60000,
+      "from": "default"
+    },
+    "pluginsFile": {
+      "value": "cypress/plugins",
+      "from": "default"
+    },
+    "port": {
+      "value": null,
+      "from": "default"
+    },
+    "projectId": {
+      "value": null,
+      "from": "default"
+    },
+    "reporter": {
+      "value": "spec",
+      "from": "default"
+    },
+    "reporterOptions": {
+      "value": null,
+      "from": "default"
+    },
+    "requestTimeout": {
+      "value": 5000,
+      "from": "default"
+    },
+    "responseTimeout": {
+      "value": 30000,
+      "from": "default"
+    },
+    "retries": {
+      "value": {
+        "runMode": 0,
+        "openMode": 0
+      },
+      "from": "default"
+    },
+    "screenshotOnRunFailure": {
+      "value": true,
+      "from": "default"
+    },
+    "screenshotsFolder": {
+      "value": "cypress/screenshots",
+      "from": "default"
+    },
+    "supportFile": {
+      "value": "cypress/support",
+      "from": "default"
+    },
+    "taskTimeout": {
+      "value": 60000,
+      "from": "default"
+    },
+    "testFiles": {
+      "value": "**/*.*",
+      "from": "default"
+    },
+    "trashAssetsBeforeRuns": {
+      "value": true,
+      "from": "default"
+    },
+    "userAgent": {
+      "value": null,
+      "from": "default"
+    },
+    "video": {
+      "value": true,
+      "from": "default"
+    },
+    "videoCompression": {
+      "value": 32,
+      "from": "default"
+    },
+    "videosFolder": {
+      "value": "cypress/videos",
+      "from": "default"
+    },
+    "videoUploadOnPasses": {
+      "value": true,
+      "from": "default"
+    },
+    "viewportHeight": {
+      "value": 660,
+      "from": "default"
+    },
+    "viewportWidth": {
+      "value": 1000,
+      "from": "default"
+    },
+    "waitForAnimations": {
+      "value": true,
+      "from": "default"
+    },
+    "scrollBehavior": {
+      "value": "top",
+      "from": "default"
+    },
+    "watchForFileChanges": {
+      "value": true,
+      "from": "default"
+    },
+    "configFile": {
+      "value": "/cypress/packages/runner-ct/cypress.json",
+      "from": "plugin"
+    },
+    "version": {
+      "value": "6.3.0",
+      "from": "plugin"
+    }
+  },
+  "parentTestsFolder": "/cypress/packages/runner-ct/cypress",
+  "parentTestsFolderDisplay": "runner-ct/cypress",
+  "supportFolder": "/cypress/packages/runner-ct/cypress/support",
+  "integrationExampleName": "examples",
+  "integrationExamplePath": "/cypress/packages/runner-ct/cypress/integration/examples",
+  "resolvedNodeVersion": "12.18.3",
+  "isNewProject": false,
+  "componentTesting": true,
+  "proxyUrl": "http://localhost:62506",
+  "browserUrl": "http://localhost:62505/__/",
+  "reporterUrl": "http://localhost:62505/__cypress/reporter",
+  "xhrUrl": "__cypress/xhrs/",
+  "proxyServer": "http://localhost:62506",
+  "browser": {
+    "name": "chrome",
+    "family": "chromium",
+    "channel": "stable",
+    "displayName": "Chrome",
+    "version": "88.0.4324.96",
+    "path": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "majorVersion": 88,
+    "isHeaded": true,
+    "isHeadless": false
+  },
+
+  "isInteractive": true
+}
