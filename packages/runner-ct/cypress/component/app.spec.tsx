@@ -5,9 +5,14 @@ import { mount } from '@cypress/react'
 import App from '../../src/app/app'
 import State from '../../src/lib/state'
 
+class MockEventManager {
+  start = () => {}
+  on = () => {}
+}
+
 describe('App', () => {
   it('closes the spec list when selecting a spec', () => {
-    class UpdatedState extends State {
+    class StateWithSpecs extends State {
       constructor () {
         super({ reporterWidth: 100 })
       }
@@ -26,21 +31,15 @@ describe('App', () => {
       setSingleSpec = action(() => { /* stub */ })
     }
 
-    class EventManager {
-      start = () => {}
-      on = () => {}
-    }
-
     mount(
       <App
-        state={new UpdatedState()}
-        // @ts-ignore
-        eventManager={new EventManager()}
+        state={new StateWithSpecs()}
+        // @ts-ignore - this is difficult to stub. Real one breaks things.
+        eventManager={new MockEventManager()}
         config={{ projectName: 'Project' }}
       />,
     )
 
-    cy.get('[role="toggle-menu"]')
     cy.get('[aria-label="Close the menu"]')
     cy.get('[role="unselected-spec"]').contains('This is a spec').click()
     cy.get('[aria-label="Open the menu"]')
