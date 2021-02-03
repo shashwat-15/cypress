@@ -1,6 +1,5 @@
 // @ts-check
 /// <reference types="cypress" />
-const fs = require('fs')
 const path = require('path')
 const { startDevServer } = require('@cypress/webpack-dev-server')
 
@@ -14,24 +13,6 @@ module.exports = (on, config) => {
       webpackConfig: require(config).default,
       options,
     })
-  })
-
-  on('task', {
-    getDummySpecs: () => {
-      const dummyDir = path.resolve(__dirname, '..', 'component', 'dummy_specs')
-
-      return fs
-      .readdirSync(dummyDir)
-      .map((filename) => {
-        const absolute = path.join(dummyDir, filename)
-
-        return {
-          absolute,
-          relative: path.relative(path.resolve(__dirname, '..', '..'), absolute),
-          name: filename,
-        }
-      })
-    },
   })
 
   return config
