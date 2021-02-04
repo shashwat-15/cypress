@@ -7,7 +7,7 @@ const { startDevServer } = require('@cypress/webpack-dev-server')
 module.exports = (on, config) => {
   on('dev-server:start', (options) => {
     // yarn tsc webpack.config.ts --esModuleInterop
-    const config = path.resolve(__dirname, '..', '..', 'webpack.config.ts')
+    const config = path.resolve(__dirname, '../../webpack.config.ts')
 
     return startDevServer({
       webpackConfig: require(config).default,
